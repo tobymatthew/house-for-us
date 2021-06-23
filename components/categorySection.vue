@@ -48,35 +48,42 @@ export default {
 </script>
 
 <style scoped>
-.contianer {
-  display: inline-grid;
+.container {
+  display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 1px 1px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". . ."
+    ". . ."
+    ". . .";
+  margin: 100px 100px;
+ 
 }
 
 .card {
   /* Add shadows to create the "card" effect */
-
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
+  background-color: #ffffff;
+  border-radius: 4px;
+  box-shadow: #000000 0px 1px 1px -1px;
+  color: #000000;
+  line-height: 24px;
+  text-align: center;
+  padding: 0px 0px 18px;
+  width: 300px;
 }
+
+
 
 /* On mouse-over, add a deeper shadow */
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
-.card-container {
-  padding: 2px 16px;
-}
 
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
-  border-radius: 5px; /* 5px rounded corners */
-}
 
-/* Add rounded corners to the top left and the top right corner of the image */
-img {
-  border-radius: 5px 5px 0 0;
+img{
+  width: 300px;
 }
 </style>

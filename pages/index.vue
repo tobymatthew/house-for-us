@@ -6,9 +6,16 @@
    <header class="header">
       <searchBar/>
    </header>
-   <section>
+   
+   <main>
+   <section class="category">
       <categorySection/>
    </section>
+
+    <section >
+      <categorySection/>
+   </section>
+   </main>
  </div>
 </template>
 
@@ -34,5 +41,12 @@ export default {
     height: 80vh;
     background-repeat: no-repeat;
     margin-top: 60px;
+  }
+
+  .category{
+    background-color: #F8F9FA;
+    margin: 0px;
+    padding: 40px 20px;
+    height: 100vh;
   }
 </style>
