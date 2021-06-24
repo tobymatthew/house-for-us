@@ -13,7 +13,7 @@
    </section>
 
     <section >
-      <categorySection/>
+      <infoSection/>
    </section>
    </main>
  </div>
@@ -23,12 +23,14 @@
 import navbar from '../components/navbar';
 import searchBar from '../components/searchBar';
 import categorySection from '../components/categorySection';
+import infoSection from '../components/infoSection';
 
 export default {
    components:{
        navbar,
       searchBar,
-      categorySection
+      categorySection,
+      infoSection
       
    }
 
