@@ -1,5 +1,9 @@
 <template>
-  <div class="container">
+  <div>
+    <h1 class="category-header">Explore our most popular cities</h1>
+    <p class="category-paragraph">See what these cities have to offer and rent the perfect place</p>
+  <div class="category-container">
+    
     <div v-for="card in card" :key="card.id" class="card">
       <img :src="card.image" alt="" />
       <div class="card-container">
@@ -8,6 +12,7 @@
         <p>{{ card.description }}</p>
       </div>
     </div>
+  </div>
   </div>
 </template>
 
@@ -48,17 +53,31 @@ export default {
 </script>
 
 <style scoped>
-.container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  gap: 1px 1px;
-  grid-auto-flow: row;
-  grid-template-areas:
-    ". . ."
-    ". . ."
-    ". . .";
-  margin: 100px 100px;
+
+  .category-header,.category-paragraph{
+   text-align: center;
+    color: #2d4658;
+    font-family: sans-serif;
+
+  }
+
+   .category-header{
+     font-size: 35px;
+     margin:20px;
+   }
+
+   .category-paragraph{
+     color:#808f9a;
+      margin-bottom:45px;
+   }
+.category-container {
+ height: inherit;
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+ justify-content: space-evenly;
+ padding-bottom: 50px;
+ align-items: center;
  
 }
 
@@ -72,6 +91,9 @@ export default {
   text-align: center;
   padding: 0px 0px 18px;
   width: 300px;
+  height: 350px;
+  margin-bottom: 10px;
+  
 }
 
 

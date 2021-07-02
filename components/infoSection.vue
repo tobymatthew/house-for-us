@@ -49,16 +49,13 @@ export default {
 
 <style scoped>
 .container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  gap: 1px 1px;
-  grid-auto-flow: row;
-  grid-template-areas:
-    ". . ."
-    ". . ."
-    ". . .";
-  margin: 100px 100px;
+ height: inherit;
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+ justify-content: space-evenly;
+ padding-bottom: 50px;
+ align-items: center;
  
 }
 
