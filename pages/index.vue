@@ -20,10 +20,17 @@
     <testimonial/>
    </section>
 
+  <section class="featuredCities">
+   <featuredCities/>
+  </section>
+
    <section class="featuredCountries">
      <featuredCountries/>
    </section >
    </main>
+   <footer>
+     <houseFooter/>
+   </footer>
  </div>
 </template>
 
@@ -34,6 +41,9 @@ import categorySection from '../components/categorySection';
 import infoSection from '../components/infoSection';
 import testimonial from '../components/testimonial';
 import featuredCountries from '../components/featuredCountries';
+import featuredCities   from '../components/featuredCities';
+import houseFooter from '../components/houseFooter';
+
 
 
 
@@ -44,7 +54,10 @@ export default {
       categorySection,
       infoSection,
       testimonial,
-      featuredCountries
+      featuredCountries,
+      featuredCities,
+      houseFooter
+      
       
      
       
