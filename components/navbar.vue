@@ -8,9 +8,9 @@
         <li class="nav-item_middle"><a class="nav-link"  href="">pricing</a></li>
         <li class="nav-item_middle"><a class="nav-link"  href="">learn</a></li> -->
         
-        <li class="nav-item"><a class="nav-link"  href="">login</a></li>
-        <li class="nav-item"><a class="nav-link" href="">sign up</a></li>
-        <li class="nav-item"><a  class="nav-link" href="">for lanlords</a></li>
+        <li class="nav-item"><a class="nav-link"  href="">LOG IN</a></li>
+        <li class="nav-item"><a class="nav-link" href="">SIGN UP</a></li>
+        <li class="nav-item"><a  class="nav-link last-child" href="">FOR LANLORDS</a></li>
       </ul>
       <div @click.prevent="toggle()" v-bind:class="{active:isActive}" class="hamburger">
         <span class="bar"></span>
@@ -71,12 +71,12 @@ a {
 
 .nav-menu {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    margin-right: 20px ;
 }
 
 .nav-item {
-    margin-left: 5rem;
+    margin-left: 4rem;
 }
 
 /* .nav-item_middle{
@@ -87,11 +87,31 @@ a {
 
 .nav-link{
     font-size: 16px;
+    font-weight:500;
     color: #000000;
+    padding: 10px;
+    text-transform: capitalize;
+
 }
 
 .nav-link:hover{
-    color: #482ff7;
+    background-color: #e3ecf5;
+}
+
+
+.nav-item:nth-child(3){
+    border:1px solid #569c3cd7;
+    border-radius: 5px;
+    padding: 6px 10px;
+}
+
+.nav-item:nth-child(3):hover{
+   background-color:#569c3c04;
+   
+}
+.last-child:hover{
+   background-color:transparent;
+     color: #569c3cd7;
 }
 
 .nav-logo {
