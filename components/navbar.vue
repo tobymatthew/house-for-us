@@ -1,7 +1,7 @@
 <template>
   <div>
     <nav class="nav">
-      <a class="nav-logo" href="">HouseForUs</a>
+      <a class="nav-logo" href=""><img src="" alt="HouseForUs"></a>
       <ul v-bind:class="{active:isActive}" class="nav-menu">
           
         <!-- <li class="nav-item_middle"><a class="nav-link"  href="">product</a></li>
@@ -39,6 +39,10 @@ export default {
 
 <style scoped>
 
+img{
+    height: 60px;
+    width: 112px;
+}
 
 li {
     list-style: none;

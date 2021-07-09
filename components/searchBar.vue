@@ -30,7 +30,11 @@ export default {};
   text-align: center;
   font-size: 65px;
   font-family: Average sans;
-  background-image: linear-gradient(315deg, #3bb78f 0%, #10fa91 74%);
+background: #11998e;  
+background: -webkit-linear-gradient(to left, #38ef7d, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
    background-clip: text;
   -webkit-text-fill-color: transparent;
   
